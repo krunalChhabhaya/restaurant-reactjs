@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavigationBar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Menu from './components/Menu';
+import About from './components/About';
+import Contact from './components/Contact';
+import './styles/App.css';
 
 function App() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.navbar-custom');
+      const carouselItem = document.querySelector('.carousel-item');
+
+      if (carouselItem) {
+        const carouselHeight = carouselItem.offsetHeight;
+        if (window.scrollY > carouselHeight) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      } else {
+        // Default behavior when there is no carousel item
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

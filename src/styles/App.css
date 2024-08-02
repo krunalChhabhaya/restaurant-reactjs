@@ -1,0 +1,521 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.navbar-custom {
+  transition: background-color 0.3s ease;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-custom.scrolled {
+  background-color: #fff;
+  position: fixed;
+}
+
+.navbar-custom.scrolled a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-custom.scrolled a:hover {
+  color: #c8a97e;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link.active-link {
+  color: #c8a97e !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #c8a97e;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-caption-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption {
+  color: #fff;
+  text-align: center;
+  top: 38%;
+}
+
+.logo-txt {
+  font-size: 30px;
+  color: #c8a97e;
+  font-weight: normal;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 0;
+}
+
+.logo-txt:hover {
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.crousel-heading {
+  font-size: 80px;
+  color: #c8a97e;
+  font-weight: normal;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.home-sections {
+  margin-bottom: 7rem !important;
+}
+
+.heading-section {
+  position: relative;
+}
+
+.home-pg-title {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.srvc-card {
+  border: none;
+  background-color: #343333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 20px auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.card {
+  min-height: 360px;
+}
+
+.subheading {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 100px;
+  display: block;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.2);
+  color: #c8a97e;
+  line-height: 1;
+  font-family: "Great Vibes", cursive;
+  margin-top: 0;
+  z-index: -1;
+}
+
+.dish-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.dish-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dish-ingredients {
+  font-size: 17px;
+  color: #505050;
+}
+
+.reservation-section {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  background-image: url('../imgs/bg_3.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reservation-form {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form .form-label {
+  font-weight: 600;
+}
+
+.reservation-form .form-control {
+  border-radius: 0;
+}
+
+.reservation-form .btn {
+  border-radius: 0;
+  font-size: 1.2rem;
+  background-color: #c8a97e;
+  border: 1px solid #c8a97e;
+}
+
+.reservation-form .btn:hover {
+  background-color: #fff;
+  color: #c8a97e;
+  transition: all 0.4s;
+}
+
+.subheading-2 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 100px;
+  display: block;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.2);
+  color: #c8a97e;
+  line-height: 1;
+  font-family: "Great Vibes", cursive;
+  margin-top: 0;
+  z-index: 0;
+}
+
+.home-pg-title-2 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* Testimony Section */
+.customer-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.customer-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.quote-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: -1px;
+  right: -10px;
+  background-color: #c8a97e;
+  color: #fff;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.customer-message {
+  font-size: 17px;
+  line-height: 2;
+  margin: 20px 0;
+  color: #666666;
+}
+
+.customer-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.customer-role {
+  color: #c8a97e;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Blog Section */
+.blog-link {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+/* Blog Card Styles */
+.blog-title {
+  color: #333;
+}
+
+.text-muted {
+  color: #777777;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.me-1 {
+  margin-right: 0.25rem;
+}
+
+.blog-img {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  object-fit: fill;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+/* Footer Style  */
+footer {
+  background-color: #141313;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer h4 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #c8a97e;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer .form-inline {
+  display: flex;
+}
+
+.input-news {
+  border-radius: 2px;
+  width: auto;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: none;
+  color: white !important;
+  font-size: 16px;
+  border-radius: 0%;
+}
+
+.input-news::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.news-btn {
+  background-color: #c8a97e;
+  border: none;
+}
+
+.news-btn:hover {
+  background-color: #fff;
+  color: #c8a97e;
+  transition: all 0.4s;
+}
+
+/* Menu Page CSS Styles  */
+/* header part styles  */
+.menu-header {
+  background-image: url('../imgs/bg_3.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.menu-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.menu-title {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.menu-subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.menu-dish-img {
+  height: 260px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.custom-nav .nav-link {
+  color: black;
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 0%;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link:focus,
+.custom-nav .nav-link.active {
+  background-color: #c8a97e;
+  color: white;
+}
+
+.tab-content h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.menu-price {
+  font-size: 20px;
+  color: #c8a97e;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.tab-content p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-dish-order-btn {
+  background: #c8a97e;
+  border: 1px solid #c8a97e;
+  color: #fff;
+}
+
+.menu-dish-order-btn:hover {
+  background: #fff;
+  color: #c8a97e;
+  border: 1px solid #c8a97e;
+  transition: all 0.4s;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.25em;
+  }
+
+  .card-text {
+    font-size: 1em;
+  }
+
+  .dish-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dish-name {
+    font-size: 1.25em;
+  }
+
+  .dish-ingredients {
+    font-size: 1em;
+  }
+}
