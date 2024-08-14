@@ -403,7 +403,7 @@ footer .form-inline {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -495,6 +495,74 @@ footer .form-inline {
   color: #c8a97e;
   border: 1px solid #c8a97e;
   transition: all 0.4s;
+}
+
+/* About Page Styles */
+.about-section {
+  padding: 7em 0;
+  position: relative;
+}
+
+.about-section .img-1 {
+  margin-top: -30px;
+  background-image: url('../imgs/about.jpeg');
+}
+
+.about-section .img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about-section .img-2 {
+  margin-bottom: -30px;
+  background-image: url('../imgs/about-1.jpeg');
+}
+
+.wrap-about {
+  position: relative;
+}
+
+.about-text {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 2;
+  font-size: 17px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.wrap-about span {
+  margin: 15px 0;
+}
+
+.wrap-about a {
+  font-size: 40px;
+  font-weight: 700;
+  transition: .3s all ease;
+  color: #c8a97e;
+  text-decoration: none;
+}
+
+.numbers-section {
+  margin-bottom: 5em;
+}
+
+.numbers-section .number {
+  font-weight: 600;
+    font-size: 44px;
+    color: #c8a97e;
+    display: block;
+    line-height: 1;
+    text-align: left;
+}
+
+.numbers-section span {
+  display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 @media (max-width: 768px) {

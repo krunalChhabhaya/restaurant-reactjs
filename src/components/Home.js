@@ -28,7 +28,6 @@ import blogImage1 from '../imgs/image_1.jpeg';
 import blogImage2 from '../imgs/image_2.jpeg';
 import blogImage3 from '../imgs/image_3.jpeg';
 
-
 const Home = () => {
   return (
     <>
