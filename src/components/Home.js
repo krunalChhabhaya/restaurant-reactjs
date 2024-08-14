@@ -82,7 +82,7 @@ const Home = () => {
       <Container className="my-5 home-sections">
         <div className='heading-section text-center'>
           <span className='subheading'>Explore</span>
-          <h2 className='mb-4 home-pg-title'>Our Services</h2>
+          <h2 className='mb-5 home-pg-title'>Our Services</h2>
         </div>
         <Row>
           <Col md={4}>
@@ -124,7 +124,7 @@ const Home = () => {
       <Container className='my-5 home-sections'>
         <div className='heading-section text-center'>
           <span className='subheading'>Specialties</span>
-          <h2 className='mb-4 home-pg-title'>Popular Dishes</h2>
+          <h2 className='mb-5 home-pg-title'>Popular Dishes</h2>
         </div>
         <Row>
           <Col md={3} className="text-center">

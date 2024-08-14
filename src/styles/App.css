@@ -117,6 +117,7 @@ p {
 
 .heading-section {
   position: relative;
+  margin-top: 5em;
 }
 
 .home-pg-title {
@@ -127,7 +128,7 @@ p {
 
 .srvc-card {
   border: none;
-  background-color: #343333;
+  /* background-color: #343333; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -156,12 +157,12 @@ p {
 .card-title {
   font-size: 1.5em;
   font-weight: bold;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .card-text {
   font-size: 1.2em;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .card {
@@ -546,7 +547,7 @@ footer .form-inline {
 }
 
 .numbers-section {
-  margin-bottom: 5em;
+  margin-bottom: 7em !important;
 }
 
 .numbers-section .number {
@@ -563,6 +564,50 @@ footer .form-inline {
     font-size: 14px;
     text-transform: uppercase;
     text-align: left;
+}
+
+.chef-section h3 {
+  font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.chef-section .chef-name {
+  font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+/* Contwct Page Style  */
+.contact-container {
+  margin: 7em 0 !important;
+}
+
+.contact-input {
+  height: 52px !important;
+    background: #fff !important;
+    color: #000000 !important;
+    font-size: 16px;
+    border-radius: 0px;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-textarea {
+  background: #fff !important;
+  color: #000000 !important;
+  font-size: 16px;
+  border-radius: 0px;
+  box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-button {
+  background: #c8a97e;
+  border: 1px solid #c8a97e;
+  color: #fff;
+  border-radius: 2px;
 }
 
 @media (max-width: 768px) {
